@@ -1,4 +1,4 @@
-
+---MST & Prims
 import sys
 
 
