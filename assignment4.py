@@ -1,3 +1,5 @@
+---n-queens
+
 def is_safe(board, row, col):
 # Check if no queens threaten the current cell in the same column
     for i in range(row):
