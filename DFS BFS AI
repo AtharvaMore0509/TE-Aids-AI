@@ -1,0 +1,39 @@
+def dfs(graph, s, visited):
+    visited[s] = 1
+    print(s)
+    for c in graph[s]:
+        if visited[c] == 0:
+            dfs(graph, c, visited)
+
+def bfs(graph, s):
+    queue = [s]
+    visited = [0] * len(graph)
+    visited[s] = 1
+
+    while queue:
+        current = queue.pop(0)
+        print(current)
+        for c in graph[current]:
+            if visited[c] == 0:
+                queue.append(c)
+                visited[c] = 1
+
+x = int(input("How many Nodes are there in the graph: "))
+visited = [0] * x
+
+graph = {
+    0: [1, 2],
+    1: [0, 3, 4],
+    2: [0, 3],
+    3: [1, 2, 4],
+    4: [1, 3]
+}
+
+p = int(input("Choose DFS OR BFS:\n1) DFS\n2) BFS\n---> "))
+
+if p == 1:
+    start_node = int(input("Enter the starting node for DFS: "))
+    dfs(graph, start_node, visited)
+elif p == 2:
+    start_node = int(input("Enter the starting node for BFS: "))
+    bfs(graph, start_node)
