@@ -7,6 +7,10 @@ Put password for sudo
 import all libraries in .py file (pip install.....)
 command (python3 filename.py)
 
+CPS combines sensors, actuators, and processing units to enable real-time data collection and decision-making
+Its goal is to improve efficiency, safety, and adaptability in areas like manufacturing, healthcare, transportation, 
+and energy management by bridging the gap between digital and physical systems.
+
 QUESTIONS:
 IIoT (Industrial Internet of Things)
 IIoT refers to connecting industrial devices and machinery to the internet to enable data collection, monitoring, automation, and analysis, improving efficiency, safety, and productivity in industrial settings.
